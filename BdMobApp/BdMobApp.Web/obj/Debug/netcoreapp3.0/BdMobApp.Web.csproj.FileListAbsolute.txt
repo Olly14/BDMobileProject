@@ -7,7 +7,6 @@ C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\bin\Debug\netc
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\bin\Debug\netcoreapp3.0\BdMobApp.Web.runtimeconfig.dev.json
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\bin\Debug\netcoreapp3.0\BdMobApp.Web.dll
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\bin\Debug\netcoreapp3.0\BdMobApp.Web.pdb
-C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.csprojAssemblyReference.cache
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.AssemblyInfoInputs.cache
@@ -18,3 +17,4 @@ C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netc
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.dll
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.pdb
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.genruntimeconfig.cache
+C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Web\obj\Debug\netcoreapp3.0\BdMobApp.Web.csprojAssemblyReference.cache

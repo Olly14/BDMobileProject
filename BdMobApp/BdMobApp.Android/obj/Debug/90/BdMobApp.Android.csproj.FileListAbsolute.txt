@@ -495,3 +495,4 @@ C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Android\obj\Debug\
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.Android\obj\Debug\90\res\xml\network_security_config.xml

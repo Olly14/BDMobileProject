@@ -35,7 +35,8 @@ namespace Bd.MobileApi.Data.Management.Services.ProductServices
         public async Task<IEnumerable<ProductDto>> FindProductsAsync()
         {
             var products = new List<ProductDto>();
-            var path = Path.Combine(@"https://10.0.2.2:44301/api/", "Products");
+            var path = Path.Combine("http://10.0.2.2:5000/api/", "Products/GetProducts");
+            //var path = Path.Combine("http://192.168.1.12:59168/api/", "Products/GetProducts");
             var uri = new Uri(path);
             var client = new HttpClient();
             //specify to use TLS 1.2 as default connection
