@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BdMobApp": {
+      "commandName": "Project",
+      "sqlDebugging": false,
+      "nativeDebugging": false
+    }
+  }
+}

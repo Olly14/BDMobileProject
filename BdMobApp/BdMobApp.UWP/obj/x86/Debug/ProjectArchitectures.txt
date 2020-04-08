@@ -1,0 +1,1 @@
+C:\Users\ASUS\source\repos\BlankSolutionOne\BdMobApp\BdMobApp.UWP\BdMobApp.UWP.csproj;x86
