@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "BdMobApp.Android.dll" comes first in this list. */
 		"BdMobApp.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"AutoMapper.dll",
 		"BdMobApp.dll",
 		"FormsViewGroup.dll",

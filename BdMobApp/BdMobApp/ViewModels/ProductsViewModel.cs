@@ -1,5 +1,8 @@
-﻿using BdMobApp.ModelMappers;
+﻿using Bd.MobileApi.Data.Management;
+using Bd.MobileApi.Data.Management.DtoModels;
+using BdMobApp.ModelMappers;
 using BdMobApp.Models;
+using BdMobApp.ServiceConfigurtion.BdHttpVlientProvider;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,38 +14,49 @@ namespace BdMobApp.ViewModels
 {
     public class ProductsViewModel : BaseViewModel
     {
+        private IBdHttpClientProvider<ProductDto> _bdHttpClientProvider;
 
         public ProductsViewModel()
         {
-            Products = new ObservableCollection<ProductModel>();
+            ObservableProducts = new ObservableCollection<ProductModel>();
+            _bdHttpClientProvider = HttpClientProduct;
             LoadProductsCommand = new Command(async () => await ExecuteLoadProductsAsync());
-        }
+         }
 
-        public ObservableCollection<ProductModel> Products { get; set; }
+        public ObservableCollection<ProductModel> ObservableProducts { get; set; }
+        //public ObservableCollection<ProductModel> Products { get; set; }
         public Command LoadProductsCommand { get; set; }
 
-       
 
+
+        //private async Task<ObservableCollection<ProductModel>> ExecuteLoadProductsAsync()
         private async Task<ObservableCollection<ProductModel>> ExecuteLoadProductsAsync()
         {
-            Products = new ObservableCollection<ProductModel>();
+            //Products = new ObservableCollection<ProductModel>();
             if (IsBusy)
             {
-                return Products;
+                return ObservableProducts;
             }
             IsBusy = true;
             try
             {
-                Products.Clear();
+
+                ObservableProducts.Clear();
                 var products = MapperConfig.Mapper
                     .Map<IEnumerable<ProductModel>>(
-                    await ProductClient.FindProductsAsync()).ToList();
-                var productsSize = products.Count();
-                for (int i = 0; i < productsSize; i++)
+                    await ProductClient.FindProductsAsync());
+
+                foreach (var item in products)
                 {
-                    Products.Add(products[i]);
+                    ObservableProducts.Add(item);
                 }
-                return Products;
+                //var productsSize = products.Count();
+                //for (int i = 0; i < productsSize; i++)
+                //{
+                //    var prod = products[i];
+                //    Products.Add(prod);
+                //}
+                return ObservableProducts;
                 //Products = products.ToList().Select(p => { Products.Add(p); return p; }); 
             }
             catch (Exception ex)

@@ -2,12 +2,35 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace BdMobApp.ViewModels
 {
     public class ProductDetailViewModel : BaseViewModel
     {
+
+
         public  ProductModel _product;
+
+        public ProductDetailViewModel()
+        {
+            _product =  new ProductModel();
+            Title = _product?.Name;
+            ExcecuteConfirmationServiceCommand = new Command(() => ExecutePlaceOrder());
+        }
+
+        private void ExecutePlaceOrder()
+        {
+            ButtonIsVisible = true;
+
+            var order = new OrderViewModel()
+            {
+
+            };
+
+
+            throw new NotImplementedException();
+        }
 
         public ProductDetailViewModel(ProductModel productModel = null)
         {

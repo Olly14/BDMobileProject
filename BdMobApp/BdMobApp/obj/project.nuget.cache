@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lLHp2p59kLRvla11uiz0zNrrZW6vLmz3qcS4LLWsMSXPG2K5H+7z9ShBcer4ZKwoNl/v/WXMWyUA3cnSIXATKw==",
+  "dgSpecHash": "jASow+L+Fa5ixyE6yVYTd1DBnKOHYoXS4CVyYg70z2hNw1+eNcY/YO+gBjlieCC10/MP3wnuP6uTnKWVfMBkcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\BlankSolutionOne\\BdMobApp\\BdMobApp\\BdMobApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\acr.userdialogs\\7.1.0.442\\acr.userdialogs.7.1.0.442.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

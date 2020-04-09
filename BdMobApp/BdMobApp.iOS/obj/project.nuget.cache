@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2WUspEpL3Amn7s4LxEHDJk9l5Z19JPil+x45pID4TXPaZssrSJDoSCsj52h6klLLYj4MnGCqeB0QZ7oI65FlDg==",
+  "dgSpecHash": "ZIOy4CNvGpKTUnjvz7WsKUqpNh+xaJ7E4wY2ZDaun9qQKfzMcHGjO1Li9pc93smAu7fhHC8ZGB46jU1Lug+63g==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\BlankSolutionOne\\BdMobApp\\BdMobApp.iOS\\BdMobApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\acr.userdialogs\\7.1.0.442\\acr.userdialogs.7.1.0.442.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\btprogresshud\\1.3.1\\btprogresshud.1.3.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.3\\microsoft.extensions.dependencymodel.3.1.3.nupkg.sha512",

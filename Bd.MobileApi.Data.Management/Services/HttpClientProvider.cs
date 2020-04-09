@@ -7,7 +7,7 @@ namespace Bd.MobileApi.Data.Management
 {
     public static class HttpClientProvider
     {
-        public static HttpClient Client = new HttpClient();
+        public static HttpClient Client;
 
         public static string BaseUrl;
 
@@ -15,16 +15,16 @@ namespace Bd.MobileApi.Data.Management
         {
             ServicePointManager.ServerCertificateValidationCallback += (o, cert, chain, errors) => true;
             Client = new HttpClient(new HttpClientHandler());
-            BaseUrl = @"https://10.0.2.2:44301/Api/";
+            BaseUrl = @"http://10.0.2.2:5000/Api/";
         }
 
 
 
-        public static string AppUsersUrl => "AppUsers";
+        public static string AppUsersUrl => "AppUsers/GetAppUsers";
 
 
 
-        public static  string ProductUrl => "Products";
+        public static  string ProductUrl => "Products/GetProducts";
         public static HttpClient Create()
         {
             return Client;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BdMobApp.SecurityConfigurations
+namespace BdMobApp.ViewModelServices
 {
     public class TestClass
     {

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
 using Xamarin.Forms;
-
 using BdMobApp.Models;
 using BdMobApp.Services;
-using Bd.MobileApi.Data.Management.Services.AppUserServices;
 using Bd.MobileApi.Data.Management.DtoModels;
 using System.Threading.Tasks;
+using BdMobApp.ViewModelServices;
+using Bd.MobileApi.Data.Management.Services.AppUserServices;
 using Bd.MobileApi.Data.Management.Services.ProductServices;
+using BdMobApp.ServiceConfigurtion.BdHttpVlientProvider;
 
 namespace BdMobApp.ViewModels
 {
@@ -21,6 +21,13 @@ namespace BdMobApp.ViewModels
         public IAppUserClient AppUserClient => DependencyService.Get<IAppUserClient>() ?? new AppUserClient();
 
         public IProductClient ProductClient => DependencyService.Get<IProductClient>() ?? new ProductClient();
+
+        public IBdHttpClientProvider<AppUserDto> HttpClientAppUser => DependencyService.Get<IBdHttpClientProvider<AppUserDto>>() ?? new BdHttpClientProvider<AppUserDto>();
+
+        public IBdHttpClientProvider<ProductDto> HttpClientProduct => DependencyService.Get<IBdHttpClientProvider<ProductDto>>() ?? new BdHttpClientProvider<ProductDto>();
+
+        public IConfirmationService ConfirmationService => DependencyService.Get<IConfirmationService>() ?? new ConfirmationService();
+
 
         public Command LoadAppUser => new Command(async()=> await ExcuteLoadAppUsersAsync());
 
@@ -39,6 +46,13 @@ namespace BdMobApp.ViewModels
         }
 
         bool isBusy = false;
+
+        public bool ButtonIsVisible = false;
+
+        public Command ExcecuteConfirmationServiceCommand;
+
+        
+
         public bool IsBusy
         {
             get { return isBusy; }

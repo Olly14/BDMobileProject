@@ -4,7 +4,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BdMobApp.Services;
 using BdMobApp.Views;
-using BdMobApp.SecurityConfigurations;
+using BdMobApp.ViewModelServices;
 using System.Net;
 
 namespace BdMobApp

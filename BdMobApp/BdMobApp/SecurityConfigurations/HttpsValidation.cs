@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
-namespace BdMobApp.SecurityConfigurations
+namespace BdMobApp.ViewModelServices
 {
     public static class HttpsValidation
     {

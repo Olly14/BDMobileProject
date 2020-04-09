@@ -12,6 +12,9 @@
             <Label Text="{Binding ProductModelDescription}" FontSize="Medium" />
             <Label Text="{Binding ProductModelPrice}" FontSize="Medium" />
             <Label Text="{Binding ProductModelName}" FontSize="Medium" />
+
+            <Button Command="{Binding ExcecuteConfirmationServiceCommand}" IsVisible="{Binding ButtonIsVisible}" Text="Place Order"></Button>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

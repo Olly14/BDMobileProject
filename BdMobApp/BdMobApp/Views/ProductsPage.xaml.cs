@@ -20,6 +20,7 @@ namespace BdMobApp.Views
         {
             InitializeComponent();
             BindingContext = _productsViewModel = new ProductsViewModel();
+            //Command command = _productsViewModel.LoadProducts;
         }
 
         async void OnSelectedItem(object sender, SelectedItemChangedEventArgs args)
@@ -45,7 +46,7 @@ namespace BdMobApp.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (_productsViewModel.Products.Count == 0){
+            if (_productsViewModel.ObservableProducts.Count == 0){
                 _productsViewModel.LoadProductsCommand.Execute(null);
             }
 
